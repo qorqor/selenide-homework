@@ -59,7 +59,8 @@ public class test extends BaseTest{
     @AfterClass
     public void tearDown(){
         Configuration.browser = "";
-        System.out.println("INVALID.");
+        System.out.println("Browser Closed.");
+
     }
 
 }
