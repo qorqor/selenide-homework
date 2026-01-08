@@ -58,7 +58,7 @@ public class test extends BaseTest{
     @AfterClass
     public void tearDown(){
         Configuration.browser = "";
-        System.out.println("Logged out of e-commerce application.");
+        System.out.println("Change.");
     }
 
 }
