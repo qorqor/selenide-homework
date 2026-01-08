@@ -13,7 +13,7 @@ public class BaseTest {
 
     @BeforeTest
     public void beforeTest(){
-        System.out.println("Browser started working!");
+        System.out.println("BROWSER DID NOT START WORKING!");
     }
 
     @AfterTest
