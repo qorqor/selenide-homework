@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="crossBrowser" thread-count="2" parallel="tests">
+
+    <test name="functionalTesting">
+        <parameter name="browserType" value="chrome"/>
+        <groups>
+            <define name="allGroups">
+                <include name="purchase-test"/>
+                <include name="functionality-test"/>
+            </define>
+
+            <define name="purchase-test"/>
+            <define name="functionality-test"/>
+
+            <run>
+                <include name="allGroups"/>
+            </run>
+
+        </groups>
+        <packages>
+            <package name="ge.tbc.testautomation.tests"/>
+        </packages>
+    </test>
+
+</suite>
