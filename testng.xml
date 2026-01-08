@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="crossBrowser" thread-count="2" parallel="tests">
+
+    <test name="chromeTest">
+        <parameter name="browserType" value="chrome"/>
+        <classes>
+            <class name="ge.tbc.testautomation.tests.test">
+<!--                <methods>-->
+<!--                    <include name="addToCartTest"/>-->
+<!--                    <include name="makePaymentTest"/>-->
+<!--                    <include name="proceedToCheckoutTest"/>-->
+<!--                    -->
+<!--                    <exclude name="validateImageSizes"/>-->
+<!--                    <exclude name="sortOffers"/>-->
+<!--                    <exclude name="validateBurgerMenu"/>-->
+<!--                </methods>-->
+            </class>
+        </classes>
+    </test>
+    <test name="firefoxTest">
+        <parameter name="browserType" value="firefox"/>
+        <classes>
+            <class name="ge.tbc.testautomation.tests.test"/>
+        </classes>
+    </test>
+</suite>
